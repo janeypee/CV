@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HOTEL BOOOKING FORM</title>
+    </head>
+    <body>
+        <form action="teitter.html" method="GET">
+            <fieldset>
+                <legend>Personal Details:</legend>
+                <label for="name">Username: </label> <input type="text" name="username" id="name" required autofocus placeholder="Your username" pattern="[a-zA-Z]{3,}" title="please enter in more than three letters">
+                <label for="email">Email:</label><input type="text" name="email" id="email" required placeholder="Your email" pattern="[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="please enter in a valid email adress">
+                <label for="phone">Phone:</label><input type="tel" name="phone" id="phone" required placeholder="please enter in your phone number" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" title="please enter in a phone number in this format: #### ### ###">
+                <select name="country" required>
+                    <option value=""></option>
+                    <option value="US">"US"</option>
+                    <option value="UK">UK</option>
+                    <option value="Aus">AUS</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Booking Details:</legend>
+                <label for="date">Booking date: </label><input type="date" name="date" min="2013-12-02">
+                ,label for="number of guests">Number of Guests: <input type="number" name="numberOfGuess" min="1" max="6">
+                <p> Do you require meals?</p>
+                <lable for="yesMeals">Yes: </lable><input type="radio"name="meals" value="yesMeals">
+                <label for="noMeals">No: </label><input type="radio" name="meals" value="noMeals">
+                <br>
+                <label for=balcony"<input type="checkbox" name="balcony" value="yes" checked>
+                <br>
+                <input type="image" src="images/button.png">
+            </fieldset>
+
+        </form>
+       
+    </body>
+</html>
